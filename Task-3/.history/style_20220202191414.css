@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ecf0f3;
+  font-family: sans-serif;
+  outline: none;
+}
+h1 {
+  font-family: cursive;
+  align-items: center;
+  color: #34416d;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #07b6fc;
+  /* background-image: url(./assets/bg.jpg); */
+  width: 100%;
+}
+.calculator {
+  background-color: #ecf0f3;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  display: grid;
+  grid-template-columns: repeat(4, 68px);
+}
+input {
+  grid-column: span 4;
+  height: 70px;
+  width: 260px;
+  background-color: #ecf0f3;
+  box-shadow: inset -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 30px;
+  color: rgb(70, 70, 70);
+  font-size: 50px;
+  text-align: end;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+button {
+  height: 48px;
+  width: 48px;
+  background-color: #ecf0f3;
+  box-shadow: inset -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 50%;
+  margin: 8px;
+  font-size: 16px;
+}
+.equal {
+  width: 115px;
+  border-radius: 40px;
+  background-color: #ecf0f3;
+  box-shadow: inset -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+.divide {
+  background-color: #40f00b;
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(255, 255, 255, 0.3);
+}
+
+.mult {
+  background-color: #e413c8;
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(255, 255, 255, 0.3);
+}
+
+.add {
+  background-color: #1243e6;
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(255, 255, 255, 0.3);
+}
+
+.sub {
+  background-color: #d8e612;
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(255, 255, 255, 0.3);
+}
+
+.red {
+  background-color: #ff0707;
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(255, 255, 255, 0.3);
+}
+.percent {
+  background-color: #07f7ff;
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(255, 255, 255, 0.3);
+}
+
+.equal {
+  background-color: #6c9269;
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(255, 255, 255, 0.3);
+}
+
+.divide,
+.add,
+.mult,
+.sub,
+.red,
+.equal {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bg-balls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  z-index: -1;
+}
+.bg-balls:before,
+.bg-balls:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.bg-balls:before {
+  background-color: orange;
+  right: -75px;
+  bottom: -75px;
+  @media screen and (min-width: 476px) {
+    width: 220px;
+    height: 220px;
+    right: -110px;
+    bottom: -110px;
+  }
+}
+
+.bg-balls:after {
+  background-color: green;
+  top: -75px;
+  left: -75px;
+  @media screen and (min-width: 476px) {
+    width: 220px;
+    height: 220px;
+    top: -110px;
+    left: -110px;
+  }
+}
