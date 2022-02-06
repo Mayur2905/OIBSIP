@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #10ddf8;
+  display: grid;
+  align-items: center;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 80px;
+  width: 60%;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+}
+
+#tempCalc label {
+  font-size: 30px;
+}
+
+#temp {
+  border-color: grey;
+  border-radius: 20px;
+  padding: 10px;
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  margin-top: 20px;
+  vertical-align: top;
+  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+
+#type {
+  height: 40px;
+  border-color: gray;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  height: 40px;
+  width: 200px;
+  vertical-align: top;
+  background-color: #ffffff;
+  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+label {
+  font-family: cursive;
+  font-weight: bold;
+  color: #3e3663;
+}
+#btn {
+  background-color: rgb(7, 69, 241);
+  height: 50px;
+  width: 90px;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  border: none;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+#result {
+  font-size: 15px;
+  font-weight: 600;
+}

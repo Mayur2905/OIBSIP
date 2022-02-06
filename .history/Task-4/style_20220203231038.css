@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8e7af;
+  display: grid;
+  align-items: center;
+}
+
+form {
+  background-color: #fab1a0;
+  padding: 80px;
+  width: 60%;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+#tempCalc label {
+  font-size: 30px;
+}
+
+#temp {
+  border: none;
+  padding: 10px;
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  margin-top: 20px;
+  vertical-align: top;
+}
+
+#type {
+  height: 40px;
+  border: none;
+  margin-top: 20px;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+#btn {
+  background-color: black;
+  height: 30px;
+  width: 80px;
+  color: white;
+  margin: 10px;
+  border: none;
+}
+#result {
+  font-size: 15px;
+  font-weight: 600;
+}
