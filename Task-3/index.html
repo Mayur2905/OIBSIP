@@ -4,42 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clauculator</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container bg-balls">
-        <div class="calculator">
-            <h1>Claculator</h1>
-            <input type="text" placeholder="0" id="output-screen">
-            <button onclick="Clear()" class="red">Cl</button>
-            <button onclick="del()" class="red">DEL</button>
-            <button onclick="display('%') "class="percent">%</button>
-            <button onclick="display('/')" class="divide">÷</button>
-            <button onclick="display('7')">7</button>
-            <button onclick="display('8')">8</button>
-            <button onclick="display('9')">9</button>
-            <button onclick="display('*')" class="mult">*</button>
-            <button onclick="display('4')">4</button>
-            <button onclick="display('5')">5</button>
-            <button onclick="display('6')">6</button>
-            <button onclick="display('-')" class="sub">-</button>
-            <button onclick="display('3')">3</button>
-            <button onclick="display('2')">2</button>
-            <button onclick="display('1')">1</button>
-            <button onclick="display('+')" class="add">+</button>
-            <button onclick="display('.')">.</button>
-            <button onclick="display('0')">0</button>
-            <button onclick="Calculate()" class="equal">=</button>
-        </div>
+    <div >
+        <form id="tempCalc" onsubmit="convert(); return false">
+            <label for="temp">Temperature Converter</label><br/>
+            <input type="text" name="temp" id="temp" placeholder="Temp in °Celcius ">
+            <select name="temp_diff" id="type">
+                <option value="fah">Fahrenheit</option>
+                <option value="Kel">Kelvin</option>
+            </select><br/>
+            <input id="btn" type="submit" value="Convert" name="temp"> 
+            <div id="result"></div>
+        </form>
+        <script type = "text/javascript" src="script.js"></script>
     </div>
-    <script type = "text/javascript" src="function.js"></script>
-    <!-- <script>
-        let outputScreen = document.getElementById("output-screen");
-    function display(num){
-    outputScreen.value += num
-    } 
-    </script>
-    -->
 </body>
 </html>
